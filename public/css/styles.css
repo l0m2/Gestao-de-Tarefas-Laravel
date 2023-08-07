@@ -1,0 +1,333 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  cursive;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+   background-color: #646464;
+    
+}
+
+header{
+    color: #fffdfd;
+   padding-bottom: #fff;
+   /*border-bottom: 2px solid hsla(0, 0%, 100%, 0.301);*/
+   right: 0;
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 33px 9%;
+  /* background-color: #4CAF50;*/
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    display: flex;
+    /*font-size: 30px;
+    font-weight: 700;*/
+    color:#fff;
+}
+
+main{
+
+  color:#fff;
+  min-height: 75vh;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  padding:20px;
+  color:#fff;
+  align-items:center;
+ /* background-color: #4CAF50;*/
+  min-height: 40vh;
+  display: flex;
+} 
+
+/* Estilização básica do formulário */
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 0px solid #4CAF50;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização das labels */
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilização dos campos de entrada */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilização do botão de envio */
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+form a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+  max-width: 500px; /* Aumentando a largura do formulário */
+  margin: 0 auto;
+  padding: 20px;
+  border: 0px solid #4CAF50;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px; /* Reduzindo o espaçamento interno dos inputs */
+  margin-bottom: 10px; /* Reduzindo o espaçamento entre os campos */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px; /* Aumentando o espaçamento interno do botão */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.navlist{
+  display: flex;
+}
+.navlist a{
+  color:white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 61200;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;   
+}
+
+.navlist a:hover,.navlist a:active{
+  border-bottom: 2px solid white;
+}
+
+.container-home {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap; /* Permite que as tarefas quebrem para a próxima linha quando não houver espaço suficiente */
+  justify-content: space-between; /* Distribui as tarefas igualmente ao longo do contêiner */
+}
+.container-home .single-task {
+  justify-content: center; /* Centraliza a tarefa quando houver apenas uma */
+}
+
+.task {
+  width: calc(50% - 20px); /* 50% para duas tarefas em uma linha e 20px de margem */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-title {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  word-break: break-all; /* Permite que o título quebre em várias linhas conforme necessário */
+}
+
+.task-date {
+  margin: 0;
+}
+
+.task-priority {
+  margin-top: 5px;
+  font-weight: bold;
+}
+  
+  /* Cores para diferentes prioridades */
+  .task-priority.high {
+    color: red;
+  }
+  
+  .task-priority.medium {
+    color: orange;
+  }
+  
+  .task-priority.low {
+    color: green;
+  }
+  
+  .btn-saber-mais {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-saber-mais:hover {
+    background-color: #45a049;
+  }
+
+  .container-usuario {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 0px solid #ccc;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.edit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+
+  background-color: #45a049;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.container-detalhes {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.task-field {
+  margin: 0;
+  margin-bottom: 5px;
+  word-wrap: break-word; /* Adicionando a propriedade para quebrar o texto em várias linhas */
+}
+.task-field a{
+  font-family: Arial, sans-serif;
+}
+
+.btn-encerrar {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-encerrar:hover {
+  background-color: #45a049;
+}
