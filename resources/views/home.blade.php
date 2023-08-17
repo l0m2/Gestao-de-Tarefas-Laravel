@@ -21,7 +21,7 @@
     <p class="task-date">Data de Início: {{$tarefa->dataCriacao}}</p>
     <p class="task-date">Data de Conclusão: {{$tarefa->dataConclusao}}</p>
 <p class="task-priority">Prioridade: <b style="color:{{getPriorityColor($tarefa->prioridade)}}">{{$tarefa->prioridade}}</b></p>
-    <a href="{{route('TarefaController.detalhes',['id'=>$usuario->id, 'idTarefa'=>$tarefa->id])}}" class="btn-saber-mais">➕</a>
+    <a href="{{route('TarefaController.detalhes',['id'=>$usuario->id, 'idTarefa'=>$tarefa->id])}}" class="btn-saber-mais">Detalhes</a>
   </div>
   @endforeach
 </div>
